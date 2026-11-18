@@ -2,23 +2,13 @@
 
 **Design and Evaluation of an Evidence-Grounded Agentic GraphRAG System for Software Engineering Education**
 
-**Bushra Salama Aljohani ? Abdulaziz A. Alhubaishy ? Abdulmajeed Aljuhani**
+**Bushra Salama Aljohani, Abdulaziz A. Alhubaishy, and Abdulmajeed Aljuhani**
 
-Publication companion and executable reference implementation for the GraphSE-Learn manuscript (18 November 2026 version, submitted to *Systems*).
+Executable reference implementation accompanying the GraphSE-Learn research manuscript.
 
 GraphSE-Learn connects software engineering concepts to their source evidence, uses specialized agents to generate tutoring and assessment content, and assigns workflow control, grading, and mastery updates to deterministic components. The manuscript studies technical reliability; student learning outcomes remain a separate empirical question.
 
 The study uses SWEBOK v4 knowledge from **Software Design, Software Construction, and Software Testing**. This repository illustrates the architecture with a **synthetic corpus and scripted model responses**, so the demonstration runs offline without API keys. It is a compact reference implementation, not the frozen deployed system evaluated in the paper, and does not reproduce the reported experiments or include the SWEBOK corpus.
-
-## Authors
-
-| Author | Affiliation in the manuscript |
-|---|---|
-| Bushra Salama Aljohani | Department of Computer Science, Faculty of Computing and Information Technology, King Abdulaziz University, Jeddah, Saudi Arabia |
-| Abdulaziz A. Alhubaishy | College of Computing and Informatics, Prince Musaid Bin Abdulrahman University, Riyadh, Saudi Arabia |
-| Abdulmajeed Aljuhani | College of Computer Science and Engineering, Taibah University, Medina, Saudi Arabia |
-
-Corresponding author: [Bushra Salama Aljohani](mailto:baljohani0112@stu.kau.edu.sa).
 
 ## Architecture
 
@@ -122,44 +112,6 @@ The deployed system described in the paper uses a web interface, backend service
 
 By default, high-impact and inferred relations are excluded from the reference graph. `build_graph(..., keep_review_queue=True)` retains them in `kg.review_queue` for an optional human-review workflow. This review option was **not used or evaluated in the study**; held relations were not added to the study graph.
 
-## Citation
-
-Bushra Salama Aljohani, Abdulaziz A. Alhubaishy, and Abdulmajeed Aljuhani. **GraphSE-Learn: Design and Evaluation of an Evidence-Grounded Agentic GraphRAG System for Software Engineering Education.** Manuscript submitted to *Systems*, 18 November 2026 version.
-
-```bibtex
-@unpublished{aljohani2026graphselearn,
-  author = {Aljohani, Bushra Salama and Alhubaishy, Abdulaziz A. and Aljuhani, Abdulmajeed},
-  title = {GraphSE-Learn: Design and Evaluation of an Evidence-Grounded Agentic GraphRAG System for Software Engineering Education},
-  year = {2026},
-  note = {Manuscript submitted to Systems; 18 November 2026 version},
-  url = {https://github.com/bushra-aljohani/graphse-framework}
-}
-```
-
-Machine-readable software citation metadata is also available in [CITATION.cff](CITATION.cff). No final publication DOI is asserted.
-
 ## License
 
-The reference implementation is released under the **MIT License**. The manuscript figures are reproduced from the authors' supplied manuscript for research documentation; the software license does not grant rights to the SWEBOK source corpus or other third-party materials.
-
-MIT License
-
-Copyright (c) 2026 Bushra Salama Aljohani, Abdulaziz A. Alhubaishy, Abdulmajeed Aljuhani
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+MIT License. Copyright (c) 2026 Bushra Salama Aljohani, Abdulaziz A. Alhubaishy, and Abdulmajeed Aljuhani.
