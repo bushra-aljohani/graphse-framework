@@ -1,0 +1,27 @@
+{
+  "_note": "Extraction proposals as a model might return them for the synthetic corpus. The last five are deliberately defective and must be rejected by the provenance gate.",
+  "proposals": [
+    {"kind": "node", "name": "Modularity", "node_type": "Principle", "chunk_id": "A1.1-c1", "page": 10, "span": "Modularity divides a system into modules that can be developed and changed separately.", "support_status": "EXPLICIT", "confidence": 0.95},
+    {"kind": "node", "name": "Coupling", "node_type": "Concept", "chunk_id": "A1.1-c1", "page": 10, "span": "Coupling measures how strongly modules depend on each other.", "support_status": "EXPLICIT", "confidence": 0.95},
+    {"kind": "node", "name": "Cohesion", "node_type": "Concept", "chunk_id": "A1.1-c1", "page": 10, "span": "Cohesion measures how closely the elements inside one module belong together.", "support_status": "EXPLICIT", "confidence": 0.95},
+    {"kind": "node", "name": "Information hiding", "node_type": "Principle", "chunk_id": "A1.2-c1", "page": 11, "span": "Information hiding keeps design decisions that are likely to change inside one module.", "support_status": "EXPLICIT", "confidence": 0.93},
+    {"kind": "node", "name": "Coupling", "node_type": "Concept", "chunk_id": "A1.2-c1", "page": 11, "span": "Low coupling and high cohesion improve maintainability", "support_status": "EXPLICIT", "confidence": 0.85},
+    {"kind": "node", "name": "Maintainability", "node_type": "Concept", "chunk_id": "A1.2-c1", "page": 11, "span": "improve maintainability, because a change stays local to one module", "support_status": "EXPLICIT", "confidence": 0.88},
+    {"kind": "node", "name": "Class diagram", "node_type": "Artifact", "chunk_id": "A2.1-c1", "page": 12, "span": "A class diagram shows the classes of a system and the relationships between them.", "support_status": "EXPLICIT", "confidence": 0.94},
+    {"kind": "node", "name": "Component diagram", "node_type": "Artifact", "chunk_id": "A2.1-c1", "page": 13, "span": "A component diagram shows how larger parts of the system are connected through interfaces.", "support_status": "EXPLICIT", "confidence": 0.92},
+    {"kind": "node", "name": "Equivalence partitioning", "node_type": "Technique", "chunk_id": "B1.1.1-c1", "page": 20, "span": "Equivalence partitioning divides the input domain into classes whose members are expected to behave alike.", "support_status": "EXPLICIT", "confidence": 0.96},
+    {"kind": "node", "name": "Boundary value analysis", "node_type": "Technique", "chunk_id": "B1.1.2-c1", "page": 21, "span": "Boundary value analysis selects test inputs at the edges of the classes found by equivalence partitioning", "support_status": "EXPLICIT", "confidence": 0.96},
+    {"kind": "node", "name": "Branch coverage", "node_type": "Concept", "chunk_id": "B1.2-c1", "page": 22, "span": "Branch coverage measures whether each decision outcome has been executed by the tests.", "support_status": "EXPLICIT", "confidence": 0.95},
+
+    {"kind": "relation", "source": "Coupling", "target": "Maintainability", "relation_type": "improves", "chunk_id": "A1.2-c1", "page": 11, "span": "Low coupling and high cohesion improve maintainability", "support_status": "EXPLICIT", "confidence": 0.86},
+    {"kind": "relation", "source": "Coupling", "target": "Cohesion", "relation_type": "related_to", "chunk_id": "A1.2-c1", "page": 11, "span": "Low coupling and high cohesion", "support_status": "EXPLICIT", "confidence": 0.84},
+    {"kind": "relation", "source": "Boundary value analysis", "target": "Equivalence partitioning", "relation_type": "related_to", "chunk_id": "B1.1.2-c1", "page": 21, "span": "the classes found by equivalence partitioning", "support_status": "EXPLICIT", "confidence": 0.9},
+    {"kind": "relation", "source": "Equivalence partitioning", "target": "Boundary value analysis", "relation_type": "prerequisite_of", "chunk_id": "B1.1.2-c1", "page": 21, "span": "the classes found by equivalence partitioning", "support_status": "INFERRED_CANDIDATE", "confidence": 0.7},
+
+    {"kind": "node", "name": "Encapsulation", "node_type": "Principle", "chunk_id": "A1.2-c1", "page": 11, "span": "Encapsulation bundles data with the operations on it.", "support_status": "EXPLICIT", "confidence": 0.9},
+    {"kind": "node", "name": "Path coverage", "node_type": "Concept", "chunk_id": "B1.2-c1", "page": 22, "span": "every path through the code has been executed", "support_status": "EXPLICIT", "confidence": 1.4},
+    {"kind": "node", "name": "   ", "node_type": "Concept", "chunk_id": "B1.2-c1", "page": 22, "span": "Branch coverage measures whether each decision outcome", "support_status": "EXPLICIT", "confidence": 0.8},
+    {"kind": "node", "name": "Test oracle", "node_type": "Concept", "chunk_id": "B9-c1", "page": 30, "span": "A test oracle decides whether a test passed.", "support_status": "EXPLICIT", "confidence": 0.9},
+    {"kind": "relation", "source": "Class diagram", "target": "Sequence diagram", "relation_type": "related_to", "chunk_id": "A2.1-c1", "page": 12, "span": "A class diagram shows the classes", "support_status": "EXPLICIT", "confidence": 0.8}
+  ]
+}

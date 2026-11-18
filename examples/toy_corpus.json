@@ -1,0 +1,56 @@
+{
+  "_note": "Synthetic corpus written for this repository. It only illustrates the input format: areas, topics, nested subtopics and page-bounded text chunks.",
+  "areas": [
+    {
+      "id": "A", "title": "Design",
+      "topics": [
+        {
+          "id": "A1", "title": "Design principles",
+          "subtopics": [
+            {"id": "A1.1", "title": "Modularity", "chunks": [
+              {"id": "A1.1-c1", "page_start": 10, "page_end": 10,
+               "text": "Modularity divides a system into modules that can be developed and changed separately. Coupling measures how strongly modules depend on each other. Cohesion measures how closely the elements inside one module belong together."}
+            ]},
+            {"id": "A1.2", "title": "Information hiding", "chunks": [
+              {"id": "A1.2-c1", "page_start": 11, "page_end": 11,
+               "text": "Information hiding keeps design decisions that are likely to change inside one module. Low coupling and high cohesion improve maintainability, because a change stays local to one module."}
+            ]}
+          ]
+        },
+        {
+          "id": "A2", "title": "Design notations",
+          "subtopics": [
+            {"id": "A2.1", "title": "Structural notations", "chunks": [
+              {"id": "A2.1-c1", "page_start": 12, "page_end": 13,
+               "text": "A class diagram shows the classes of a system and the relationships between them. A component diagram shows how larger parts of the system are connected through interfaces."}
+            ]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B", "title": "Testing",
+      "topics": [
+        {
+          "id": "B1", "title": "Test techniques",
+          "subtopics": [
+            {"id": "B1.1", "title": "Input-based techniques", "subtopics": [
+              {"id": "B1.1.1", "title": "Partitioning", "chunks": [
+                {"id": "B1.1.1-c1", "page_start": 20, "page_end": 20,
+                 "text": "Equivalence partitioning divides the input domain into classes whose members are expected to behave alike."}
+              ]},
+              {"id": "B1.1.2", "title": "Boundaries", "chunks": [
+                {"id": "B1.1.2-c1", "page_start": 21, "page_end": 21,
+                 "text": "Boundary value analysis selects test inputs at the edges of the classes found by equivalence partitioning, where faults are often found."}
+              ]}
+            ]},
+            {"id": "B1.2", "title": "Code-based techniques", "chunks": [
+              {"id": "B1.2-c1", "page_start": 22, "page_end": 22,
+               "text": "Branch coverage measures whether each decision outcome has been executed by the tests. Full branch coverage does not show that every path through the code has been executed."}
+            ]}
+          ]
+        }
+      ]
+    }
+  ]
+}

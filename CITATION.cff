@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "GraphSE-Learn: Reference implementation for evidence-grounded agentic GraphRAG in software engineering education"
+version: 0.1.0
+license: MIT
+authors:
+  - family-names: "Aljohani"
+    given-names: "Bushra Salama"
+  - family-names: "Alhubaishy"
+    given-names: "Abdulaziz A."
+  - family-names: "Aljuhani"
+    given-names: "Abdulmajeed"
+
+repository-code: "https://github.com/bushra-aljohani/graphse-framework"
